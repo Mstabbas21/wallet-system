@@ -31,7 +31,7 @@ Route::get('/services', [ServiceController::class, 'index']);
 //show services spesific
 Route::get('/services/{id}',[ServiceController::class,'showService']);
 // phurcase a services
-Route::post('/purchases',[PurchasesController::class,'store']);
+Route::post('/purchases',[PurchasesController::class,'purchase']);
 
    }); 
  

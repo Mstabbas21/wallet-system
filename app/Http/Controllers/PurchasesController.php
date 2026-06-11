@@ -13,6 +13,7 @@ class PurchasesController extends Controller
 {
     public function store(Request $request)
     {
+       
         //validation
          $validated = $request->validate([
             'service_id'=>'required|exists:services,id',      
